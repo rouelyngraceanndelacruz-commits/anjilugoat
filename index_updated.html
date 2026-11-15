@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Letter For AJ ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Floating Hearts -->
+    <div class="background-hearts">
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+    </div>
+
+    <!-- CSS-only envelope control -->
+    <input type="checkbox" id="open-letter">
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <p class="eyebrow">YOOOOOOHOOOOOOOOOOO</p>
+
+        <h1>Dear, <span>ANJILUGOAT.</span></h1>
+
+        <p class="subtitle">
+            te lam mo ba..
+        </p>
+
+        <!-- ENVELOPE -->
+        <div class="envelope-container">
+
+            <label for="open-letter" class="envelope">
+
+                <div class="envelope-back"></div>
+
+                <div class="letter-preview">
+                    <span>HELLO PO♡</span>
+                </div>
+
+                <div class="envelope-flap"></div>
+
+                <div class="envelope-front"></div>
+
+                <div class="wax-seal">♥</div>
+
+            </label>
+
+        </div>
+
+        <label for="open-letter" class="open-button">
+            PLIS OPEN ♡
+        </label>
+
+        <p class="hint">A letter written especially for you.</p>
+
+    </section>
+
+    <!-- CONFESSION LETTER -->
+    <section class="letter-modal">
+
+        <div class="paper">
+
+            <p class="letter-label">A LETTER FROM THE HEART</p>
+
+            <h2>Dear AJ, ♡</h2>
+
+            <p>
+                Hi po! nde ko alam pano k sasabihin to so hehe
+            </p>
+
+            <p>
+                Hindi ko alam kung paano ko uumpisahan,
+                pero it is what it is,,
+            </p>
+
+            <p>
+                I like u simula nung naging close tayo nung bakasyon.
+                sabi ko sa sarili ko nung una eh hindi magtatagal to
+                kasi happy crush nga lang, pero iba na eh,,
+            </p>
+
+            <p>
+                I find myself looking forward to our little
+                interactions, appreciating the simplest
+                moments, and smiling whenever you cross
+                my mind.
+            </p>
+
+            <p>
+                I'm not expecting anything from you, and
+                I don't want you to feel pressured to
+                respond the same way. I just wanted to
+                be honest about what I feel instead of
+                keeping it to myself.
+            </p>
+
+            <p>
+                Please sana hindi maging awkward huhu,,
+
+            </p>
+
+            <div class="signature">
+                Sincerely,<br>
+                rowrow. ♥
+            </div>
+
+            <label for="open-letter" class="close-button">
+                CLOSE LETTER ♡
+            </label>
+
+        </div>
+
+    </section>
+
+            <!-- MUSIC BOX -->
+            <div class="music-box">
+                <p>♪ A song for you ♡</p>
+                <iframe
+                    id="spotifyPlayer"
+                    src="https://open.spotify.com/embed/track/2NIWb2Qa85tIkqd6zHbN00"
+                    width="100%"
+                    height="152"
+                    style="border: 0; border-radius: 12px;"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="eager">
+                </iframe>
+                <a href="https://open.spotify.com/track/2NIWb2Qa85tIkqd6zHbN00"
+                   target="_blank" rel="noopener noreferrer">
+                    Open in Spotify ♡
+                </a>
+            </div>
+
+            </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        MADE WITH LOVE AND A LITTLE COURAGE ♥
+        <p>For Anjelo, blebleble.</p>
+    </footer>
+<script>
+    const letterToggle = document.getElementById("open-letter");
+    const spotifyPlayer = document.getElementById("spotifyPlayer");
+
+    // Start loading the Spotify player when the envelope is opened.
+    letterToggle.addEventListener("change", function () {
+        if (letterToggle.checked) {
+            spotifyPlayer.src =
+                "https://open.spotify.com/embed/track/2NIWb2Qa85tIkqd6zHbN00?autoplay=1";
+        } else {
+            // Reset the player when the letter is closed.
+            spotifyPlayer.src =
+                "https://open.spotify.com/embed/track/2NIWb2Qa85tIkqd6zHbN00";
+        }
+    });
+</script>
+</body>
+</html>
